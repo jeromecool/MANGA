@@ -7,7 +7,7 @@ const express = require('express'),
 const homeController = require('./controllers/homeController'),
     articleController = require('./controllers/articleController'),
     contactController = require('./controllers/contactController'),
-    footerController = require('./controllers/footerController')
+    referenceController = require('./controllers/referenceController')
 
 // Home
 router.route('/')
@@ -21,8 +21,8 @@ router.route('/article')
 router.route('/contact')
     .get(contactController.get)
 
-// footer
-router.route('/footer')
-    .get(contactController.get)
+// reférence
+router.route('/reference')
+    .get(referenceController.get)
 
 module.exports = router;
