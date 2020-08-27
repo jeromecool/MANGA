@@ -1,0 +1,93 @@
+<!-- Modal -->
+<div class="modal fade" id="connect" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class=" modal-header border-0">
+
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body d-flex justify-content-center">
+                <div class=" btn-group" role="tabpanel" aria-label="Basic example">
+                    <button type="button" data-parent="#inscription" class="btn btn-secondary active">inscription</button>
+                    <button type="button" data-parent="#connection" class="btn btn-secondary">connection</button>
+                </div>
+
+
+            </div>
+
+
+            <form id="inscription" role="tabpanel" class="">
+                <div class="form-group m-4">
+                    <input type="email" class="form-control" value="" id="Email-user" placeholder="Email" aria-describedby="email">
+                </div>
+                <div class="form-group m-4">
+                    <input type="password" class="form-control" value="" id="password-user" placeholder="mots de passe" aria-describedby="password-user">
+                </div>
+
+                <div class="form-group m-4">
+                    <input type="Nom" class="form-control" value="" placeholder="Nom" id="nom-user">
+                </div>
+                <div class="form-group m-4">
+                    <input type="prenom" class="form-control" value="" placeholder="prenom" id="prenom-user">
+                </div>
+
+                <div class=" row m-4">
+
+                    <div class="  col-md-6">
+
+                        <select class="form-control" value="" id="Select-genre">
+                            <option value="selected">préférence
+                                de
+                                genre</option>
+                            <option value="#">shonen</option>
+                            <option value="#">seinen</option>
+                            <option value="#">shojo</option>
+                            <option value="#">josei</option>
+                            <option value="#">kodomo</option>
+                        </select>
+                    </div>
+
+
+                    <div class="  col-md-6">
+
+                        <input type="pseudo" class="form-control" value="" id="pseudo" placeholder="pseudo" aria-describedby="pseudo">
+                    </div>
+
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <input type="date" id="date-de-naissance" name="trip-start" value="" placeholder="date de naissance" min="1900-01-01" max="2010-12-31">
+                </div>
+
+
+                <div class=" d-flex justify-content-center mb-3">
+                    <button type="button submit" class="btn
+                                        btn-secondary" data-dismiss="modal">Envoyer</button>
+                </div>
+            </form>
+
+            <form id="connection" role="tabpanel">
+                <div class="form-group m-4">
+                    <input type="email" class="form-control" id="Email-user" placeholder="Email" aria-describedby="email">
+                </div>
+                <div class="form-group mb-0 mt-4">
+                    <input type="password" class="form-control" id="password-user" placeholder="mots de passe" aria-describedby="emailHelp">
+                </div>
+                <div class="d-flex justify-content-center mt-0 mb-4">
+                    <a href="/password-oublie">mots de passe oublié</a>
+                </div>
+
+                <div class=" d-flex justify-content-center mb-3">
+                    <button type="button submit" class="btn
+                                        btn-secondary" data-dismiss="modal">Envoyer</button>
+                </div>
+            </form>
+
+
+
+
+        </div>
+    </div>
+</div>
