@@ -12,12 +12,14 @@
                 <div class="register">
                     <div class="row">
                         <div class="col-md-12">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <ul class="nav btn-group justify-content-center" id="myTab" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="home" aria-selected="true">inscription</a>
+                                    <a class="nav-link link-dark active" id="home-tab" data-toggle="tab" href="#admin" role="tab"
+                                        aria-controls="home" aria-selected="true">inscription</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Connexion</a>
+                                    <a class="nav-link link-dark" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Connexion</a>
                                 </li>
 
                             </ul>
@@ -25,22 +27,26 @@
 
                                 <!-- Modal-form incription -->
 
-                                <div class="tab-pane fade show active" id="admin" role="tabpanel" aria-labelledby="home-tab">
-
-
-                                    <form id="inscription" action="/inscription.hbs" role="tabpanel" class="">
+                                <div class="tab-pane fade show active" id="admin" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <h3 class="register-heading">
+                                         <form id="inscription" action="/inscription.hbs" role="tabpanel" class="">
                                         <div class="form-group m-4">
-                                            <input type="email" class="form-control" value="" id="Email-user" placeholder="Email" aria-describedby="email">
+                                            <input type="email" class="form-control" value="" id="Email-user"
+                                                placeholder="Email" aria-describedby="email">
                                         </div>
                                         <div class="form-group m-4">
-                                            <input type="password" class="form-control" value="" id="password-user" placeholder="mots de passe" aria-describedby="password-user">
+                                            <input type="password" class="form-control" value="" id="password-user"
+                                                placeholder="mots de passe" aria-describedby="password-user">
                                         </div>
 
                                         <div class="form-group m-4">
-                                            <input type="Nom" class="form-control" value="" placeholder="Nom" id="nom-user">
+                                            <input type="Nom" class="form-control" value="" placeholder="Nom"
+                                                id="nom-user">
                                         </div>
                                         <div class="form-group m-4">
-                                            <input type="prenom" class="form-control" value="" placeholder="prenom" id="prenom-user">
+                                            <input type="prenom" class="form-control" value="" placeholder="prenom"
+                                                id="prenom-user">
                                         </div>
 
                                         <div class="row m-4">
@@ -62,36 +68,45 @@
 
                                             <div class="col-md-6">
 
-                                                <input type="pseudo" class="form-control" value="" id="pseudo" placeholder="pseudo" aria-describedby="pseudo">
+                                                <input type="pseudo" class="form-control" value="" id="pseudo"
+                                                    placeholder="pseudo" aria-describedby="pseudo">
                                             </div>
 
                                         </div>
                                         <div class="d-flex justify-content-center m-3 mt-0 ml-5 mr-5">
-                                            <input type="date" class="form-control" id="date-de-naissance" name="trip-start" value="" placeholder="date de naissance" min="1900-01-01" max="2010-12-31">
+                                            <input type="date" class="form-control" id="date-de-naissance"
+                                                name="trip-start" value="" placeholder="date de naissance"
+                                                min="1900-01-01" max="2010-12-31">
                                         </div>
 
 
                                         <div class="d-flex justify-content-center mb-3">
                                             <button type="button submit" class="btn
                         btn-secondary" data-dismiss="modal">Envoyer</button>
-                                        </div>
+
                                     </form>
+                                    </h3>
+
+                                   
                                 </div>
 
 
 
-                                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="tab-pane fade show" id="profile" role="tabpanel"
+                                    aria-labelledby="profile-tab">
                                     <h3 class="register-heading">
 
                                         <form id="connection" action="/connection.hbs" class=" " role="tabpanel">
                                             <div class="form-group m-4">
-                                                <input type="email" class="form-control" id="Email-user" placeholder="Email" aria-describedby="email">
+                                                <input type="email" class="form-control" id="Email-user"
+                                                    placeholder="Email" aria-describedby="email">
                                             </div>
                                             <div class="form-group m-4">
-                                                <input type="password" class="form-control" id="password-user" placeholder="mots de passe" aria-describedby="password-user">
+                                                <input type="password" class="form-control" id="password-user"
+                                                    placeholder="mots de passe" aria-describedby="password-user">
                                             </div>
                                             <div class="d-flex justify-content-center mt-0 mb-4">
-                                                <a href="/password-oublie">mots de passe oublié</a>
+                                                <a href="/password-oublie" class=" link-dark text-decoration-none font-weight-bold">mots de passe oublié</a>
                                             </div>
 
                                             <div class=" d-flex justify-content-center mb-3">
@@ -106,21 +121,8 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
             <!-- Modal-form incription -->
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 </div>
