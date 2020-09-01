@@ -4,13 +4,22 @@ const express = require('express'),
     path = require('path')
 
 // Controller
+            //accueil
 const homeController = require('./controllers/homeController'),
+            //article
     articleController = require('./controllers/articleController'),
+            //contact
     contactController = require('./controllers/contactController'),
+            //reference
     referenceController = require('./controllers/referenceController'),
+            //admin
     adminController = require('./controllers/adminController'),
+            //partie du admin
     adminpartController = require('./controllers/adminpartController'),
-    userController = require('./controllers/userController')
+            // utilisateur
+    userController = require('./controllers/userController'),
+            //book de livre
+    bookingController = require('./controllers/bookingController')
 
 // Home
 router.route('/')
@@ -39,5 +48,9 @@ router.route('/adminpart')
 // user
 router.route('/user')
     .get(userController.get)
+
+// booking
+router.route('/booking')
+    .get(bookingController.get)
 
 module.exports = router;
