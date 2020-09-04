@@ -1,0 +1,16 @@
+.w-logo {
+  width: 100px !important;
+  margin-right: 10px !important;
+}
+
+.fond {
+  background-color: #222222 !important;
+}
+
+.w-icon {
+  size: 100% !important;
+}
+
+.nav-black-active :active {
+  background-color: #080808 !important;
+}

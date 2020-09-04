@@ -1,0 +1,64 @@
+<!-- nav-->
+
+<nav class="fond container navbar navbar-expand-lg navbar-nav bg-primary">
+
+    <div class="row">
+        <div class="col-md-1 col-sm-2">
+            <img src="../assets/img/logo-manga.jpg" alt="logo" class="w-100">
+        </div>
+        <div class="col-md-10 align-content-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav fond-nav nav-black-active">
+                    <div class="btn-black">
+                        <a class="nav-link text-white active" href="/">accueil</a>
+                    </div>
+                    <div class="btn-black">
+                        <a class="nav-link text-white" href="/contact">contact</a>
+                    </div>
+                    <div class="btn-black">
+                        <a class="nav-link text-white" href="/article">article</a>
+                    </div>
+                    <div class="btn-black">
+                        <a class="nav-link text-white" href="/reference">référence</a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-1 im w-icon">
+            <button type="button" class="close" aria-label="Close" data-toggle="modal" data-target="#connect">
+                <span aria-hidden="true" class=""><i class="far fa-user-circle
+                        float-left"></i> </span>
+            </button>
+
+            {{> modal/connect-nav}}
+
+        </div>
+
+    </div>
+
+</nav>
+<!-- navpage -->
+
+<div class="container">
+
+    <nav aria-label="breadcrumb" class="row">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#"> {{ page }} </a></li>
+        </ol>
+    </nav>
+
+
+</div>
+<!-- /navpage -->
+
+
+
+<!--/nav -->
