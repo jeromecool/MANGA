@@ -1,16 +1,20 @@
 <!-- nav-->
 
-<nav class="fond container navbar navbar-expand-lg navbar-nav">
+<nav class="fond fixed-top  container navbar navbar-expand ">
 
-    <div class="row">
-        <div class="col-md-1 col-sm-2">
-            <img src="../assets/img/logo-manga.jpg" alt="logo" class="w-100">
-        </div>
-        <div class="col-md-10 align-content-center">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
+
+
+
+    <div class="col-md-10   align-content-center">
+        <div class='row'>
+            <div class="col-md-2 navbar-brand">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="../assets/img/logo-manga.jpg" alt="logo" class=" navbar-toggler img-fluid ">
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse col-md-8" id="navbar">
                 <div class="navbar-nav fond-nav nav-black-active">
                     <div class="btn-black">
                         <a class="nav-link text-white active" href="/">accueil</a>
@@ -24,26 +28,37 @@
                     <div class="btn-black">
                         <a class="nav-link text-white" href="/reference">référence</a>
                     </div>
-
-
                 </div>
+            </div>
+            <div class="col-md-2col-sm-2 col-xl-2 col-lg-2 col-xxl-2 w-icon">
+                <button type="button" class="close" aria-label="Close" data-toggle="modal" data-target="#connect">
+                    <span aria-hidden="true" class=" ">
+                        <i class="far fa-user-circle float-left navbar-brand"></i> </span>
+                </button>
+
+                {{> modal/connect-nav}}
+
 
             </div>
         </div>
-
-        <div class="col-md-1 im w-icon">
-            <button type="button" class="close" aria-label="Close" data-toggle="modal" data-target="#connect">
-                <span aria-hidden="true" class=""><i class="far fa-user-circle
-                        float-left"></i> </span>
-            </button> 
-            
-            {{> modal/connect-nav}}
-
-        </div>
-
     </div>
 
 
+
+    <!-- navpage -->
+    <div class="container mb-0">
+        <div aria-label="breadcrumb" class="row mb-0 ">
+            <ol class="breadcrumb col-md-12 col-sm-12 col-xl-12 col-lg-12 col-xxl-12 mb-0">
+                <li class="breadcrumb-item"><a href="#"> {{ page }} </a></li>
+            </ol>
+        </div>
+    </div>
+
+
+    <!-- /navpage -->
 </nav>
+
+
+
 
 <!--/nav -->

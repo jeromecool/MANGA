@@ -4,21 +4,21 @@ const express = require('express'),
     path = require('path')
 
 // Controller
-            //accueil
+//accueil
 const homeController = require('./controllers/homeController'),
-            //article
+    //article
     articleController = require('./controllers/articleController'),
-            //contact
+    //contact
     contactController = require('./controllers/contactController'),
-            //reference
+    //reference
     referenceController = require('./controllers/referenceController'),
-            //admin
+    //admin
     adminController = require('./controllers/adminController'),
-            //partie du admin
+    //partie du admin
     adminpartController = require('./controllers/adminpartController'),
-            // utilisateur
+    // utilisateur
     userController = require('./controllers/userController'),
-            //book de livre
+    //book de livre
     bookingController = require('./controllers/bookingController')
 
 // Home
@@ -35,7 +35,7 @@ router.route('/contact')
 
 // reférence
 router.route('/reference')
-.get(referenceController.get)
+    .get(referenceController.get)
 
 // admin
 router.route('/admin')
