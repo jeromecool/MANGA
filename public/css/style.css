@@ -7935,8 +7935,28 @@ a {
 li {
   text-decoration-color: #000000; }
 
+h1, .h1 {
+  font-family: "manga"; }
+
+h2, .h2 {
+  font-family: "manga"; }
+
+h3, .h3 {
+  font-family: "manga"; }
+
+h4, .h4 {
+  font-family: "manga"; }
+
+h5, .h5 {
+  font-family: "manga"; }
+
+h6, .h6 {
+  font-family: "manga"; }
+
+p {
+  font-family: "manga"; }
+
 .w-logo {
-<<<<<<< HEAD
   width: 100px !important;
   margin-right: 10px !important; }
 
@@ -7948,19 +7968,6 @@ li {
 
 .nav-black-active :active {
   background-color: #080808 !important; }
-=======
-  width: 100px;
-  margin-right: 10px; }
-
-.fond {
-  background-color: #222222; }
-
-.w-icon {
-  size: 100%; }
-
-.nav-black-active :active {
-  background-color: #080808; }
->>>>>>> d2c1381f2280486b6a28d26b5eac3ffb24412893
 
 .color-footer {
   background-color: #161212; }
@@ -7969,8 +7976,7 @@ li {
   color: #ffffff; }
 
 .img-body {
-  background-image: url(/assets/img/bodyimg.jpg);
-  background-image: linear-gradiant(#fafafa rgba(1, 1, 1, 0.5)); }
+  background-image: url(/assets/img/bodyimg.jpg); }
 
 .bg-admin {
   background-image: url(/assets/img/bodyimg.jpg); }

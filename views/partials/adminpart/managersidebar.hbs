@@ -1,27 +1,19 @@
-<<<<<<< HEAD
-<div class="accordion  m-5" id="accordion-manager">
+<div class="accordion w-100 m-5" id="accordion-manager">
     <div class="card row">
         <div class="card-header " id="managerOne">
-=======
-<div class="accordion  m-5" id="accordionExample">
-    <div class="card row">
-        <div class="card-header " id="headingOne">
->>>>>>> d2c1381f2280486b6a28d26b5eac3ffb24412893
             <h2 class="mb-1 ">
                 <button class="btn btn-link btn-block text-center text-decoration-none link-dark" type="button"
-                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    data-toggle="collapse" data-target="#manag-navbar" aria-expanded="true" aria-controls="manag-navbar">
                     sidebar
                 </button>
             </h2>
         </div>
 
-<<<<<<< HEAD
-        <div id="collapseOne" class="collapse show" aria-labelledby="managerOne" data-parent="#accordion-manager">
-=======
-        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
->>>>>>> d2c1381f2280486b6a28d26b5eac3ffb24412893
-            <div class="card-body">
+        <div id="manag-navbar" class="collapse show" aria-labelledby="managerOne" data-parent="#accordion-manager">
+            <div class="card-body p-2">
 
+
+                {{> adminpart/navbarcont}}
 
             </div>
         </div>
@@ -32,13 +24,14 @@
                 <button class="btn btn-link btn-block text-center text-decoration-none link-dark collapsed"
                     type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                     aria-controls="collapseTwo">
-                    compte utilisateur
+                    article
                 </button>
             </h2>
         </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-manager">
             <div class="card-body">
            
+                {{> adminpart/navarticle }}
             </div>
         </div>
     </div>
@@ -48,31 +41,18 @@
                 <button class="btn btn-link btn-block text-center text-decoration-none link-dark collapsed"
                     type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                     aria-controls="collapseThree">
-                    article
+                    contact
                 </button>
             </h2>
         </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion-manager">
             <div class="card-body">
                
-            </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-header" id="headingfour">
-            <h2 class="mb-1">
-                <button class="btn btn-link btn-block text-center text-decoration-none link-dark collapsed"
-                    type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false"
-                    aria-controls="collapsefour">
-                    messagerie
-                </button>
-            </h2>
-        </div>
+                {{> adminpart/navcontact}}
 
-        <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
-            <div class="card-body">
-                
+
             </div>
         </div>
     </div>
+    
 </div>
